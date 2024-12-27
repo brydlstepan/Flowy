@@ -1,0 +1,189 @@
+:root {
+    --Primary: #1bb37c;
+    --Accent: #fc424a;
+
+    --PrimaryBg: #1a1c1e;
+    --SecondaryBg: #181a1e;
+
+    --GlassBorder: 1px solid #ffffff08;
+    --GlassBorderRadius: 0.65em;
+    --GlassBlur: blur(10px) invert(2%);
+    --GlassBg: #202225cf;
+
+    --CardBorder: 1px solid #ffffff0d;
+
+    --Shadow: 0 1px 2px rgb(0 0 0 / 90%), 0 0px 2px rgb(0 0 0 / 90%);
+
+
+    --danger: #D32F2F;
+    --warning: #FBC02D;
+
+    --Default: #999999;
+    --DefaultInvert: #272727;
+    --lighter: #fff;
+    --light: #f6f6f9;
+    --grey: #181a1e;
+    --dark: #363949;
+    --darker: #15161a;
+    --darkest: #121212;
+
+
+}
+.cardOverlayContainer {
+    border-radius: var(--GlassBorderRadius);
+}
+
+
+.cardScalable  {
+    border-radius: var(--GlassBorderRadius) !important;
+    border: var(--CardBorder);
+}
+.cardBox:not(.visualCardBox) .cardPadder {
+    border-radius: var(--GlassBorderRadius) !important;
+}
+
+.cardScalable .cardImageContainer  {
+    border-radius: var(--GlassBorderRadius) !important;
+}
+
+.backgroundContainer, .dialog, .nowPlayingPlaylist, .nowPlayingContextMenu, html {
+    background-color: var(--PrimaryBg);
+}
+
+.noHomeButtonHeader .headerTabs, .pageTitleWithLogo  {
+    display: none;
+}
+
+.section0 .cardScalable{
+    display: none;
+ }
+
+.skinHeader {
+    pointer-events: none;
+}
+
+.headerButton  {
+    pointer-events: all;
+}
+
+.section0 .sectionTitle,
+.section0 .emby-scrollbuttons {
+    display: none;
+    pading: 0 !important;
+    margin: 0 !important;
+ }
+
+.section0 .cardBox-bottompadded {
+    margin-bottom: 0px !important;
+}
+
+.section0 .verticalSection-extrabottompadding {
+    margin-bottom: 0em;
+}
+
+.section0 .homeLibraryButton {
+    background-color: transparent;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.section0 .homeLibraryButton:hover {
+    color: var(--Accent);
+}
+
+.section0 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 12px;
+    z-index: 99;
+    pointer-events: none;
+    text-align: center;
+}
+
+.section0 .itemsContainer {
+    background-color: var(--GlassBg); 
+    border-radius: 2em;
+    border: var(--GlassBorder);
+    -webkit-backdrop-filter: var(--GlassBlur);
+    backdrop-filter: var(--GlassBlur);
+    pointer-events: all;
+    display: inline-block;
+    padding: 0 0 0 0;
+}
+
+.skinHeader-withBackground {
+    background-color: transparent;
+}
+
+.headerRight, .emby-tabs-slider {
+    background-color: var(--GlassBg); 
+    border-radius: 2em;
+    border: var(--GlassBorder);
+    -webkit-backdrop-filter: var(--GlassBlur);
+    backdrop-filter: var(--GlassBlur);
+    z-index: 999;
+    pointer-events: all;
+}
+.headerTabs{
+    top: 12px;
+    position: fixed;
+    margin-top: 0px;
+}
+.emby-tab-button:hover {
+    color: var(--Accent);
+}
+.emby-tabs-slider .emby-tab-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.paper-icon-button-light:hover:not(:disabled) {
+    color: var(--Accent);
+    background-color: transparent;
+}
+
+.emby-scrollbuttons .paper-icon-button-light {
+    border: var(--GlassBorder);
+    border-color:  #00000000;
+}
+.emby-scrollbuttons .paper-icon-button-light:hover:not(:disabled) {
+    border: var(--GlassBorder);
+}
+
+.button-submit, .button-submit:focus{
+    background: var(--Accent);
+}
+.emby-input:focus, .emby-textarea:focus {
+    border-color: var(--Accent);
+}
+.emby-checkbox:checked + span + .checkboxOutline, .itemProgressBarForeground {
+    background-color: var(--Accent);
+}
+.emby-checkbox:checked + span + .checkboxOutline {
+    border-color: var(--Accent);
+}
+.inputLabelFocused, .selectLabelFocused, .textareaLabelFocused {
+    color: var(--Accent);
+}
+.emby-input, .emby-textarea {
+    background: #121314;
+    border: 0.16em solid #1f2123;
+    border-radius: 0.6em;
+}
+
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+    border-color: var(--Accent);
+}
+.button-link {
+    color: var(--Accent);
+}
+.countIndicator, .fullSyncIndicator, .mediaSourceIndicator, .playedIndicator {
+    background: var(--Accent);
+}
+.homeLibraryButton {
+    margin: 0  auto !important;
+}
+.paperList {
+    background-color: transparent;
+}
