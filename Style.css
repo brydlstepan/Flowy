@@ -187,3 +187,22 @@
 .paperList {
     background-color: transparent;
 }
+
+.noBackdropTransparency .detailPageSecondaryContainer {
+    background-color: var(--PrimaryBg);
+}
+.skinHeader.semiTransparent {
+    background-color: transparent;
+}
+.detailTrackSelect {
+    padding: 0.2em 0.5em  0.2em  0.5em !important;
+    border-radius: var(--GlassBorderRadius);
+    border: var(--GlassBorder) !important;
+    background: var(--SecondaryBg);
+}
+.emby-select-withcolor:focus {
+    border: var(--GlassBorder) !important;
+}
+.detailRibbon {
+    background: linear-gradient(rgba(0,0,0,0) 0%, var(--PrimaryBg) 100%);
+}
