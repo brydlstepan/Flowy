@@ -1,0 +1,2 @@
+# Flowy
+Modern Jellyfin Theme
