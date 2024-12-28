@@ -6,7 +6,7 @@ Modern Jellyfin Theme
 Paste the following code in the Custom CSS code box:
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/brydlstepan/Flowy@main/Style.css");`
+@import url("https://cdn.jsdelivr.net/gh/brydlstepan/Flowy@main/Style.css");
 ```
 To adjust varriables like colours, radiuses etc, you can also add the following code and adjust the varriables to your taste:
 
