@@ -5,11 +5,13 @@ Modern Jellyfin Theme
 
 Paste the following code in the Custom CSS code box:
 
-`@import url("https://cdn.jsdelivr.net/gh/brydlstepan/Flowy@main/Style.css");`
-
+```css
+@import url("https://cdn.jsdelivr.net/gh/brydlstepan/Flowy@main/Style.css");
+```
 To adjust varriables like colours, radiuses etc, you can also add the following code and adjust the varriables to your taste:
 
-`:root {
+```css
+:root {
     --Accent: #fc424a;
     --PrimaryBg: #1a1c1e;
     --SecondaryBg: #121314;
@@ -34,4 +36,5 @@ To adjust varriables like colours, radiuses etc, you can also add the following 
 
     --danger: #D32F2F;
     --warning: #FBC02D;
-}`
+}
+```
