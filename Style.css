@@ -198,8 +198,11 @@
 
 /* Inputs */
 
-.detailTrackSelect, .emby-select-withcolor, .emby-input, .emby-textarea {
+.detailTrackSelect {
     padding: 0.2em 0.5em  0.2em  0.5em !important;
+}
+
+.detailTrackSelect, .emby-select-withcolor, .emby-input, .emby-textarea {
     border: var(--InputBorder) !important;
     border-radius: var(--InputBorderRadius);
     background: var(--SecondaryBg);
