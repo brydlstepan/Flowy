@@ -34,15 +34,11 @@
 
 /* Card Items */
 
-.cardBox:not(.visualCardBox) .cardPadder {
-    border-radius: var(--CardBorderRadius) !important;
-}
-
 .cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
     box-shadow: unset;
 }
 
-.cardScalable .cardImageContainer, .cardOverlayContainer, .blurhash-canvas {
+.cardScalable .cardImageContainer, .cardOverlayContainer, .blurhash-canvas, .cardBox:not(.visualCardBox) .cardPadder {
     border-radius: var(--CardBorderRadius) !important;
     border-bottom-left-radius: 0.1em !important;
     border-bottom-right-radius: 0.1em !important;
