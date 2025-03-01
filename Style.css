@@ -2,55 +2,60 @@
 
 :root {
     --Accent: #fc424a;
-    --PrimaryBg: #1a1c1e;
+    --PrimaryBg: #16181a;
     --SecondaryBg: #121314;
 
     --TextColorMain: rgba(255, 255, 255, 0.8);
     --TextColorSecondary: rgba(255, 255, 255, 0.5);
 
-    --GlassBg: #202225cf;
-    --GlassBorder: 1px solid #ffffff08;
+    --GlassBg: #1c1f22cc;
+    --GlassBorder: 1px solid #ffffff0a;
     --GlassBorderRadius: 0.65em;
     --GlassBlur: blur(10px) invert(2%);
 
-    --CardBorder: 0.1em solid #ffffff0d;
+    --CardBorder: 1px solid #ffffff0d;
     --CardBorderRadius: 0.65em;
 
     --InputBorder: 0.15em solid #1f2123;
     --InputBorderActive: 0.15em solid #272a2e;
     --InputBorderRadius: 0.5em;
 
-    --Shadow: 0em 0.1em 0.1em #00000040, 0em 0.2em 0.5em #00000025;
+    --Shadow: 0 1px 8px rgb(0 0 0 / 25%), 0 0px 2px rgb(0 0 0 / 20%);
 
     --danger: #D32F2F;
     --warning: #FBC02D;
 }
 
+/* Colours */
 
-
-
+.backgroundContainer, .dialog, .nowPlayingPlaylist, .nowPlayingContextMenu, html {
+    background-color: var(--PrimaryBg);
+}
 
 /* Card Items */
-
-.cardOverlayContainer {
-    border-radius: var(--CardBorderRadius);
-}
-
-.cardScalable  {
-    border-radius: var(--CardBorderRadius) !important;
-    border: var(--CardBorder);
-}
 
 .cardBox:not(.visualCardBox) .cardPadder {
     border-radius: var(--CardBorderRadius) !important;
 }
 
-.cardScalable .cardImageContainer  {
-    border-radius: var(--CardBorderRadius) !important;
+.cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
+    box-shadow: unset;
 }
 
-.backgroundContainer, .dialog, .nowPlayingPlaylist, .nowPlayingContextMenu, html {
-    background-color: var(--PrimaryBg);
+.cardScalable .cardImageContainer, .cardOverlayContainer, .blurhash-canvas {
+    border-radius: var(--CardBorderRadius) !important;
+    border-bottom-left-radius: 0.1em !important;
+    border-bottom-right-radius: 0.1em !important;
+}
+
+.cardBox-bottompadded {
+    margin-bottom: 1.5em !important;
+    border-radius: var(--GlassBorderRadius) !important;
+    background-color: var(--GlassBg);
+    border: var(--GlassBorder);
+    -webkit-backdrop-filter: var(--GlassBlur);
+    backdrop-filter: var(--GlassBlur);
+    box-shadow: var(--Shadow);
 }
 
 /* Fixed top bar adjustments (header and Section0 adjustments) */
@@ -235,4 +240,17 @@
 
 .inputLabelFocused, .selectLabelFocused, .textareaLabelFocused {
     color: var(--TextColorMain);
+}
+
+/* Disable url text underline effects  */
+
+.textActionButton:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+/* Smaller text on action buttons */
+
+.textActionButton {
+    font-size: small;
 }
