@@ -35,23 +35,11 @@
 /* Card Items */
 
 .cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
-    box-shadow: unset;
+    box-shadow: var(--Shadow);
 }
 
 .cardScalable .cardImageContainer, .cardOverlayContainer, .blurhash-canvas, .cardBox:not(.visualCardBox) .cardPadder {
     border-radius: var(--CardBorderRadius) !important;
-    border-bottom-left-radius: 0.1em !important;
-    border-bottom-right-radius: 0.1em !important;
-}
-
-.cardBox-bottompadded {
-    margin-bottom: 1.5em !important;
-    border-radius: var(--GlassBorderRadius) !important;
-    background-color: var(--GlassBg);
-    border: var(--GlassBorder);
-    -webkit-backdrop-filter: var(--GlassBlur);
-    backdrop-filter: var(--GlassBlur);
-    box-shadow: var(--Shadow);
 }
 
 /* Fixed top bar adjustments (header and Section0 adjustments) */
